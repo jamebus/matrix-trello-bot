@@ -14,6 +14,7 @@ export class TrelloEvents {
     public static readonly CARD_UNASSIGNED = TrelloEvents.createDef("cardUnassigned", "Fired when a user has been removed from a card");
     public static readonly CARD_UPDATED = TrelloEvents.createDef("cardUpdated", "Fired when an unhandled update happens to a card");
     public static readonly CARD_COMMENTED = TrelloEvents.createDef("cardCommented", "Fired when someone leaves a comment on a card");
+    public static readonly CARD_COPIED = TrelloEvents.createDef("cardCopied", "Fired when a card has beem copied");
 
     public static readonly DEFAULT_WATCHED_EVENTS: TrelloEventDef[] = [
         TrelloEvents.CARD_CREATED,
@@ -25,6 +26,7 @@ export class TrelloEvents {
         TrelloEvents.CARD_UNASSIGNED,
         TrelloEvents.CARD_UPDATED,
         TrelloEvents.CARD_COMMENTED,
+        TrelloEvents.CARD_COPIED,
     ];
 
     public static get ALL(): TrelloEventDef[] {
